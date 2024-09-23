@@ -67,7 +67,7 @@ EXTRA: If possible, do rate limiting with a WAF or similar. DRF should be the la
 
 To stop this problem, change the default value (`'rest_framework.permissions.AllowAny'`) of DEFAULT_PERMISSION_CLASSES. Use the setting value DEFAULT_PERMISSION_CLASSES with the correct classes for your project.
 
-DO NOT use `rest_framework.permissions.AllowAny` except for public API endpoints and DO NOT overwrite the authorization class on a class-based (variable permission_classes`) or function-based (decorator `permission_classes`) view unless you are confident about the change and understand the impact.
+DO NOT use `rest_framework.permissions.AllowAny` except for public API endpoints and DO NOT overwrite the authorization class on a class-based (`variable permission_classes`) or function-based (decorator `permission_classes`) view unless you are confident about the change and understand the impact.
 
 ### API6:2019 Mass Assignment
 
@@ -82,7 +82,6 @@ To stop this problem, you must have a repeatable hardening process leading to fa
 **DO validate, filter, and sanitize all client-provided data, or other data coming from integrated systems.**
 
 ### API8:2019 Injection
-
 
 #### SQLi
 
@@ -100,7 +99,7 @@ To prevent this problem, create an inventory of all API hosts. In this inventory
 
 ### API10:2019 Insufficient Logging & Monitoring
 
-Do the following: 
+Do the following:
 
 --Log all failed authentication attempts, denied access, and input validation errors with sufficient user context to identify suspicious or malicious accounts.
 
